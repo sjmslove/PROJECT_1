@@ -1,7 +1,4 @@
 /**
- * Created by Sierra on 9/20/2016.
- */
-/**
  * @author Smith, Sierra (sjsmith8147@gmail.com)
  * @Verson 0.0.1
  * @Summary Project 1 || created 09.19.2016
