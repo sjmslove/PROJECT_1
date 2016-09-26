@@ -31,8 +31,8 @@ function setNumCars(){
     numCars = PROMPT.question ('\n How Many Cars in the Garage?');
 }
 function setnumTotal(){
-    numTotal = basePrice + 17000*numBedrooms + 12500*numBathrooms + 6000*numCars
+    numTotal = basePrice + (17000*numBedrooms) + (12500*numBathrooms) + (6000*numCars)
 }
 function printnumTotal() {
-    console.log(` \n The total price is ${numTotal}`);
+    console.log(` \n The total price is $${numTotal}`);
 }
