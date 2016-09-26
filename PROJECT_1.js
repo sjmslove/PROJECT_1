@@ -9,7 +9,7 @@
 const PROMPT = require('readline-sync');
 
 let  numBathrooms, numBedrooms, numCars, numTotal;
-const basePrice = 50000;
+const basePrice = 50000, baseBedroom = 17000, baseBathroom = 12500, baseCars = 6000;
 
 function main(){
     setNumBathrooms();
@@ -31,7 +31,8 @@ function setNumCars(){
     numCars = PROMPT.question ('\n How Many Cars in the Garage?');
 }
 function setnumTotal(){
-    numTotal = basePrice + (17000*numBedrooms) + (12500*numBathrooms) + (6000*numCars)
+
+    numTotal = basePrice + (baseBedroom * numBedrooms) + (baseBathroom * numBathrooms) + ( baseCars * numCars)
 }
 function printnumTotal() {
     console.log(` \n The total price is $${numTotal}`);
